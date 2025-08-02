@@ -67,7 +67,18 @@ export const Navigation = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            <Button variant="default" size="sm">
+            <Button 
+              variant="default" 
+              size="sm"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/Hitesh_Kumar_Resume.pdf';
+                link.download = 'Hitesh_Kumar_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
               <Download className="w-4 h-4 mr-2" />
               Resume
             </Button>
@@ -101,7 +112,19 @@ export const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <Button variant="default" size="sm" className="w-full mt-4">
+              <Button 
+                variant="default" 
+                size="sm" 
+                className="w-full mt-4"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/Hitesh_Kumar_Resume.pdf';
+                  link.download = 'Hitesh_Kumar_Resume.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume
               </Button>

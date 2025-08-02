@@ -4,8 +4,13 @@ import heroImage from "@/assets/hero-bg.jpg";
 
 export const HeroSection = () => {
   const handleDownloadResume = () => {
-    // In a real implementation, this would download the actual resume file
-    console.log("Download resume clicked");
+    // Create a temporary link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/Hitesh_Kumar_Resume.pdf';
+    link.download = 'Hitesh_Kumar_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleContactMe = () => {
