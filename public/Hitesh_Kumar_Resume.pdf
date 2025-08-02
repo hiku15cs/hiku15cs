@@ -23,6 +23,7 @@ endobj
 /Resources <<
 /Font <<
 /F1 5 0 R
+/F2 6 0 R
 >>
 >>
 >>
@@ -30,36 +31,132 @@ endobj
 
 4 0 obj
 <<
-/Length 500
+/Length 2800
 >>
 stream
 BT
-/F1 24 Tf
+/F1 20 Tf
 50 750 Td
-(Hitesh Kumar) Tj
+(HITESH KUMAR) Tj
+0 -25 Td
+/F2 14 Tf
+(Software Engineer | Frontend Developer) Tj
+0 -20 Td
+(Bangalore, India | hitesh.kumar5@cognizant.com) Tj
+
+0 -40 Td
+/F1 16 Tf
+(ABOUT) Tj
+0 -20 Td
+/F2 11 Tf
+(Results-driven Software Engineer with 5+ years of experience building) Tj
+0 -12 Td
+(scalable, responsive web applications. Proficient in React.js, Redux,) Tj
+0 -12 Td
+(JavaScript, and modern UI/UX practices. Experienced in enterprise-grade) Tj
+0 -12 Td
+(tools, chat-based UIs, and exporting reports. Proven track record of) Tj
+0 -12 Td
+(client appreciation and delivering high-quality features in agile teams.) Tj
+
 0 -30 Td
 /F1 16 Tf
-(Software Engineer | Frontend Developer) Tj
-0 -25 Td
-(Bangalore, India) Tj
-0 -25 Td
-(hitesh.kumar5@cognizant.com) Tj
-0 -40 Td
-/F1 18 Tf
-(Experience) Tj
-0 -25 Td
-/F1 12 Tf
-(Cognizant Technology Solutions - Project Associate (Nov 2023 - Present)) Tj
-0 -15 Td
-(Tata Consultancy Services - Software Engineer (2019 - 2023)) Tj
+(SKILLS) Tj
+0 -20 Td
+/F2 11 Tf
+(Frontend: JavaScript, React.js, Redux, Bootstrap, HTML5, CSS3, SCSS) Tj
+0 -12 Td
+(Tools: Git, Postman, CVS, Putty, Snow, GOMO, jsPDF, Draft.js) Tj
+0 -12 Td
+(Databases: MySQL, Oracle) Tj
+0 -12 Td
+(Platforms: Windows, Ubuntu) Tj
+
 0 -30 Td
-/F1 18 Tf
-(Skills) Tj
-0 -25 Td
+/F1 16 Tf
+(EXPERIENCE) Tj
+0 -20 Td
 /F1 12 Tf
-(JavaScript, React.js, Redux, Bootstrap, HTML5, CSS3, SCSS) Tj
+(Cognizant Technology Solutions - Project Associate) Tj
+0 -12 Td
+/F2 10 Tf
+(Nov 2023 - Present) Tj
 0 -15 Td
-(Git, Postman, MySQL, Oracle) Tj
+/F1 12 Tf
+(Tata Consultancy Services - Software Engineer) Tj
+0 -12 Td
+/F2 10 Tf
+(2019 - 2023) Tj
+0 -15 Td
+/F1 12 Tf
+(Varistor Technology - Intern) Tj
+0 -12 Td
+/F2 10 Tf
+(2019) Tj
+
+0 -30 Td
+/F1 16 Tf
+(KEY PROJECTS) Tj
+0 -20 Td
+/F1 12 Tf
+(Chat-Based UI Application) Tj
+0 -12 Td
+/F2 10 Tf
+(Built chat interface with history view, keyword/date filter, sorting,) Tj
+0 -10 Td
+(dynamic report generation, and export to PDF/Word.) Tj
+0 -10 Td
+(Tech: React.js, Redux Toolkit, Bootstrap, jsPDF, Draft.js) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Visible Console) Tj
+0 -12 Td
+/F2 10 Tf
+(Worked on Line Lock feature, tax highlighting, timezone API) Tj
+0 -10 Td
+(integration, and UI alignment fixes.) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Workbrain \(Attendance & Payroll\)) Tj
+0 -12 Td
+/F2 10 Tf
+(Handled payroll management UI, shift scheduling logic, graphical) Tj
+0 -10 Td
+(reports, and automated punch tracking.) Tj
+
+0 -20 Td
+/F1 12 Tf
+(NewsDuniya \(Personal Project\)) Tj
+0 -12 Td
+/F2 10 Tf
+(News site with category tabs, card-based layout using free news API.) Tj
+
+0 -15 Td
+/F1 12 Tf
+(Online Voting System \(Personal Project\)) Tj
+0 -12 Td
+/F2 10 Tf
+(Secure online voting platform with end-to-end encryption and user) Tj
+0 -10 Td
+(verification.) Tj
+
+0 -30 Td
+/F1 16 Tf
+(EDUCATION) Tj
+0 -20 Td
+/F1 12 Tf
+(B.E. in Computer Science) Tj
+0 -12 Td
+/F2 10 Tf
+(CMR Institute of Technology, Bangalore \(2015-2019\)) Tj
+0 -15 Td
+/F1 12 Tf
+(Intermediate) Tj
+0 -12 Td
+/F2 10 Tf
+(St. Karen's School, Patna \(2012-2014\)) Tj
 ET
 endstream
 endobj
@@ -68,23 +165,32 @@ endobj
 <<
 /Type /Font
 /Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
 /BaseFont /Helvetica
 >>
 endobj
 
 xref
-0 6
+0 7
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
 0000000115 00000 n 
-0000000244 00000 n 
-0000000794 00000 n 
+0000000258 00000 n 
+0000003110 00000 n 
+0000003174 00000 n 
 trailer
 <<
-/Size 6
+/Size 7
 /Root 1 0 R
 >>
 startxref
-851
+3233
 %%EOF
