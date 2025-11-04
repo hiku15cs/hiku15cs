@@ -54,19 +54,19 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Connect</h4>
             <div className="flex gap-3 mb-6">
-              <Button variant="outline" size="sm" className="border-secondary-foreground/20 text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
+              <Button variant="outline" size="sm" className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary">
                 <Linkedin className="w-4 h-4" />
               </Button>
-              <Button variant="outline" size="sm" className="border-secondary-foreground/20 text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
+              <Button variant="outline" size="sm" className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary">
                 <Github className="w-4 h-4" />
               </Button>
-              <Button variant="outline" size="sm" className="border-secondary-foreground/20 text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
+              <Button variant="outline" size="sm" className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary">
                 <Mail className="w-4 h-4" />
               </Button>
             </div>
             <Button 
               variant="outline" 
-              className="w-full border-secondary-foreground/20 text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary"
+              className="w-full border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary"
               onClick={() => {
                 const link = document.createElement('a');
                 link.href = '/lovable-uploads/633fd83e-bd3b-4c6c-bfde-cc3b169a36ff.png';
