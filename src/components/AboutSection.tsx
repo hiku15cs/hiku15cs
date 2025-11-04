@@ -29,12 +29,12 @@ export const AboutSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center p-6 portfolio-card">
                 <Briefcase className="w-8 h-8 text-primary mx-auto mb-3" />
-                <h3 className="font-semibold text-foreground mb-2">5+ Years</h3>
+                <h3 className="font-semibold text-foreground mb-2">6+ Years</h3>
                 <p className="text-sm text-muted-foreground">Experience</p>
               </div>
               <div className="text-center p-6 portfolio-card">
                 <Code className="w-8 h-8 text-primary mx-auto mb-3" />
-                <h3 className="font-semibold text-foreground mb-2">2+ Years</h3>
+                <h3 className="font-semibold text-foreground mb-2">4+ Years</h3>
                 <p className="text-sm text-muted-foreground">React.js</p>
               </div>
               <div className="text-center p-6 portfolio-card">
