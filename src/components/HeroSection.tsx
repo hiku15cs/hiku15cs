@@ -42,7 +42,7 @@ export const HeroSection = () => {
           </div>
           <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-white/90">
             Crafting exceptional digital experiences with React.js and modern web technologies. 
-            5+ years of building scalable applications that users love.
+            6+ years of building scalable applications that users love.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
