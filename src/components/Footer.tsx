@@ -19,7 +19,7 @@ export const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm">
                 <Mail className="w-4 h-4" />
-                <span>hitesh.kumar5@cognizant.com</span>
+                <span>hitesh.kr.8996@gmail.com</span>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <MapPin className="w-4 h-4" />
