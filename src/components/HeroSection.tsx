@@ -6,8 +6,8 @@ export const HeroSection = () => {
   const handleDownloadResume = () => {
     // Create a temporary link element and trigger download
     const link = document.createElement('a');
-    link.href = '/lovable-uploads/633fd83e-bd3b-4c6c-bfde-cc3b169a36ff.png';
-    link.download = 'Hitesh_Kumar_Resume.png';
+    link.href = '/Hitesh_Kumar_Resume.pdf';
+    link.download = 'Hitesh_Kumar_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

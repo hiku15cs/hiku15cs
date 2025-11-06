@@ -69,8 +69,8 @@ export const Footer = () => {
               className="w-full border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary"
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = '/lovable-uploads/633fd83e-bd3b-4c6c-bfde-cc3b169a36ff.png';
-                link.download = 'Hitesh_Kumar_Resume.png';
+                link.href = '/Hitesh_Kumar_Resume.pdf';
+                link.download = 'Hitesh_Kumar_Resume.pdf';
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
