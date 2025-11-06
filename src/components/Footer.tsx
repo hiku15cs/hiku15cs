@@ -54,13 +54,28 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Connect</h4>
             <div className="flex gap-3 mb-6">
-              <Button variant="outline" size="sm" className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary"
+                onClick={() => window.open('https://www.linkedin.com/in/hiku15cs/', '_blank')}
+              >
                 <Linkedin className="w-4 h-4" />
               </Button>
-              <Button variant="outline" size="sm" className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary"
+                onClick={() => window.open('https://github.com/hiku15cs', '_blank')}
+              >
                 <Github className="w-4 h-4" />
               </Button>
-              <Button variant="outline" size="sm" className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary"
+                onClick={() => window.location.href = 'mailto:hitesh.kr.8996@gmail.com'}
+              >
                 <Mail className="w-4 h-4" />
               </Button>
             </div>

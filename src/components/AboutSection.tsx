@@ -62,7 +62,7 @@ export const AboutSection = () => {
               <div>
                 <h4 className="font-medium mb-3 text-foreground">Tools & Platforms</h4>
                 <div className="flex flex-wrap gap-2">
-                  {["Git", "Postman", "CVS", "Putty", "Snow", "GOMO"].map((tool) => (
+                  {["Git", "Postman", "CVS", "Putty", "Snow", "GOMO", "AWS CodeCommit"].map((tool) => (
                     <Badge key={tool} variant="outline" className="skill-tag">
                       {tool}
                     </Badge>
@@ -71,9 +71,20 @@ export const AboutSection = () => {
               </div>
               
               <div>
+                <h4 className="font-medium mb-3 text-foreground">Libraries</h4>
+                <div className="flex flex-wrap gap-2">
+                  {["Jodit Editor", "html-docx-js", "file-saver"].map((lib) => (
+                    <Badge key={lib} variant="outline" className="skill-tag">
+                      {lib}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+              
+              <div>
                 <h4 className="font-medium mb-3 text-foreground">Databases & Systems</h4>
                 <div className="flex flex-wrap gap-2">
-                  {["MySQL", "Oracle", "Windows", "Ubuntu", "jsPDF", "Draft.js"].map((db) => (
+                  {["MySQL", "Oracle", "Windows", "Ubuntu"].map((db) => (
                     <Badge key={db} variant="outline" className="skill-tag">
                       {db}
                     </Badge>

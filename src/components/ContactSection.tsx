@@ -134,11 +134,21 @@ export const ContactSection = () => {
             </div>
 
             <div className="flex gap-4">
-              <Button variant="outline" size="lg" className="flex-1">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="flex-1"
+                onClick={() => window.open('https://www.linkedin.com/in/hiku15cs/', '_blank')}
+              >
                 <Linkedin className="w-5 h-5 mr-2" />
                 LinkedIn
               </Button>
-              <Button variant="outline" size="lg" className="flex-1">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="flex-1"
+                onClick={() => window.open('https://github.com/hiku15cs', '_blank')}
+              >
                 <Github className="w-5 h-5 mr-2" />
                 GitHub
               </Button>
