@@ -1,45 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, MessageSquare, Eye, Calendar, Vote } from "lucide-react";
-
-const projects = [
-  {
-    title: "Chat-Based UI Application",
-    description: "Built a comprehensive chat interface with history view, keyword/date filter, sorting, dynamic report generation, and export to PDF/Word.",
-    technologies: ["React.js", "Redux Toolkit", "Bootstrap", "jsPDF", "Draft.js"],
-    icon: MessageSquare,
-    type: "Enterprise"
-  },
-  {
-    title: "Visible Console",
-    description: "Worked on Line Lock feature, tax highlighting, timezone API integration, and UI alignment fixes for improved user experience.",
-    technologies: ["React.js", "JavaScript", "CSS3", "API Integration"],
-    icon: Eye,
-    type: "Enterprise"
-  },
-  {
-    title: "Workbrain (Attendance & Payroll)",
-    description: "Handled payroll management UI, shift scheduling logic, graphical reports, and automated punch tracking system.",
-    technologies: ["React.js", "JavaScript", "MySQL", "Charts"],
-    icon: Calendar,
-    type: "Enterprise"
-  },
-  {
-    title: "NewsDuniya",
-    description: "A modern news website with category tabs and card-based layout using a free news API for real-time content.",
-    technologies: ["React.js", "News API", "CSS3", "Responsive Design"],
-    icon: ExternalLink,
-    type: "Personal"
-  },
-  {
-    title: "Online Voting System",
-    description: "A secure online voting platform featuring end-to-end encryption and comprehensive user verification system.",
-    technologies: ["React.js", "Node.js", "MySQL", "Encryption"],
-    icon: Vote,
-    type: "Personal"
-  }
-];
+import { ExternalLink, Github, Eye } from "lucide-react";
+import {projects} from "./data/projects.js"
 
 export const ProjectsSection = () => {
   return (
@@ -85,7 +48,7 @@ export const ProjectsSection = () => {
                       </Badge>
                     ))}
                   </div>
-                  <div className="flex gap-2">
+                  {/* <div className="flex gap-2">
                     {project.type === "Personal" && (
                       <>
                         <Button variant="outline" size="sm" className="flex-1">
@@ -104,7 +67,7 @@ export const ProjectsSection = () => {
                         View Details
                       </Button>
                     )}
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             );

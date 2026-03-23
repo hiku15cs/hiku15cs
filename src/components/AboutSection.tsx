@@ -29,12 +29,12 @@ export const AboutSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center p-6 portfolio-card">
                 <Briefcase className="w-8 h-8 text-primary mx-auto mb-3" />
-                <h3 className="font-semibold text-foreground mb-2">6+ Years</h3>
+                <h3 className="font-semibold text-foreground mb-2">7+ Years</h3>
                 <p className="text-sm text-muted-foreground">Experience</p>
               </div>
               <div className="text-center p-6 portfolio-card">
                 <Code className="w-8 h-8 text-primary mx-auto mb-3" />
-                <h3 className="font-semibold text-foreground mb-2">4+ Years</h3>
+                <h3 className="font-semibold text-foreground mb-2">5+ Years</h3>
                 <p className="text-sm text-muted-foreground">React.js</p>
               </div>
               <div className="text-center p-6 portfolio-card">
@@ -51,7 +51,7 @@ export const AboutSection = () => {
               <div>
                 <h4 className="font-medium mb-3 text-foreground">Frontend Development</h4>
                 <div className="flex flex-wrap gap-2">
-                  {["JavaScript", "React.js", "Redux", "HTML5", "CSS3", "SCSS", "Bootstrap"].map((skill) => (
+                  {["JavaScript", "React.js", "Redux with Saga", "HTML5", "CSS3", "Tailwind", "Bootstrap"].map((skill) => (
                     <Badge key={skill} variant="secondary" className="skill-tag">
                       {skill}
                     </Badge>
@@ -62,7 +62,7 @@ export const AboutSection = () => {
               <div>
                 <h4 className="font-medium mb-3 text-foreground">Tools & Platforms</h4>
                 <div className="flex flex-wrap gap-2">
-                  {["Git", "Postman", "CVS", "Putty", "Snow", "GOMO", "AWS CodeCommit"].map((tool) => (
+                  {["AWS CodeCommit","Git", "Postman", "Putty", "JIRA", "GOMO"].map((tool) => (
                     <Badge key={tool} variant="outline" className="skill-tag">
                       {tool}
                     </Badge>

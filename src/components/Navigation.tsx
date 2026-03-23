@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Download } from "lucide-react";
+import imageSrc from "../assets/pp-hitesh.jpg";
+import ProfileImageModal from "./ProfileImageModal";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [profileImageModal, setProfileImageModal] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,24 +34,33 @@ export const Navigation = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const handleProfileImage = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setProfileImageModal(true);
+  };
+
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? "bg-background/95 backdrop-blur-md shadow-soft border-b border-border" 
-        : "bg-transparent"
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md shadow-soft border-b border-border"
+          : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a 
+          <a
             href="#hero"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
+            onClick={handleProfileImage}
             className="text-xl font-bold text-foreground hover:text-primary transition-colors"
           >
-            HK
+            <img
+              src={imageSrc}
+              alt="Profile"
+              className="w-10 h-10 rounded-full object-cover border-2 border-gray-300 hover:scale-105 transition"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -67,13 +79,13 @@ export const Navigation = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            <Button 
-              variant="default" 
+            <Button
+              variant="default"
               size="sm"
               onClick={() => {
-                const link = document.createElement('a');
-                link.href = '/Hitesh_Kumar_Resume.pdf';
-                link.download = 'Hitesh_Kumar_Resume.pdf';
+                const link = document.createElement("a");
+                link.href = "/Hitesh_Kumar_Resume.pdf";
+                link.download = "Hitesh_Kumar_Resume.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
@@ -91,7 +103,11 @@ export const Navigation = () => {
             className="md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {isMobileMenuOpen ? (
+              <X className="w-5 h-5" />
+            ) : (
+              <Menu className="w-5 h-5" />
+            )}
           </Button>
         </div>
 
@@ -112,14 +128,14 @@ export const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <Button 
-                variant="default" 
-                size="sm" 
+              <Button
+                variant="default"
+                size="sm"
                 className="w-full mt-4"
                 onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = '/Hitesh_Kumar_Resume.pdf';
-                  link.download = 'Hitesh_Kumar_Resume.pdf';
+                  const link = document.createElement("a");
+                  link.href = "/Hitesh_Kumar_Resume.pdf";
+                  link.download = "Hitesh_Kumar_Resume.pdf";
                   document.body.appendChild(link);
                   link.click();
                   document.body.removeChild(link);
@@ -132,6 +148,7 @@ export const Navigation = () => {
           </div>
         )}
       </div>
+      {profileImageModal && <ProfileImageModal onClose={()=>setProfileImageModal(false)}imageSrc={imageSrc} />}
     </nav>
   );
 };

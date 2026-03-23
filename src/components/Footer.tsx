@@ -13,8 +13,8 @@ export const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Hitesh Kumar</h3>
             <p className="text-secondary-foreground/80 mb-4 leading-relaxed">
-              Software Engineer passionate about creating exceptional web experiences 
-              with modern technologies.
+              Software Engineer passionate about creating exceptional web
+              experiences with modern technologies.
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm">
@@ -37,7 +37,7 @@ export const Footer = () => {
                 { label: "Projects", href: "#projects" },
                 { label: "Experience", href: "#experience" },
                 { label: "Education", href: "#education" },
-                { label: "Contact", href: "#contact" }
+                { label: "Contact", href: "#contact" },
               ].map((link) => (
                 <a
                   key={link.label}
@@ -54,38 +54,43 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Connect</h4>
             <div className="flex gap-3 mb-6">
-              <Button 
-                variant="outline" 
-                size="sm" 
+              <Button
+                variant="outline"
+                size="sm"
                 className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary"
-                onClick={() => window.open('https://www.linkedin.com/in/hiku15cs/', '_blank')}
+                onClick={() =>
+                  window.open("https://www.linkedin.com/in/hiku15cs/", "_blank")
+                }
               >
                 <Linkedin className="w-4 h-4" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="sm" 
+              <Button
+                variant="outline"
+                size="sm"
                 className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary"
-                onClick={() => window.open('https://github.com/hiku15cs', '_blank')}
+                onClick={() =>
+                  window.open("https://github.com/hiku15cs", "_blank")
+                }
               >
                 <Github className="w-4 h-4" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="sm" 
+              <Button
+                type="button"
+                variant="outline"
+                size="sm"
                 className="border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary"
-                onClick={() => window.location.href = 'mailto:hitesh.kr.8996@gmail.com'}
+                onClick={() => window.open("mailto:hitesh.kr.8996@gmail.com")}
               >
                 <Mail className="w-4 h-4" />
               </Button>
             </div>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               className="w-full border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary"
               onClick={() => {
-                const link = document.createElement('a');
-                link.href = '/Hitesh_Kumar_Resume.pdf';
-                link.download = 'Hitesh_Kumar_Resume.pdf';
+                const link = document.createElement("a");
+                link.href = "/Hitesh_Kumar_Resume.pdf";
+                link.download = "Hitesh_Kumar_Resume.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
