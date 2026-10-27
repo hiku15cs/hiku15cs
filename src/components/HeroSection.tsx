@@ -3,16 +3,6 @@ import { Download, Mail, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
 export const HeroSection = () => {
-  const handleDownloadResume = () => {
-    // Create a temporary link element and trigger download
-    const link = document.createElement('a');
-    link.href = '/Hitesh_Kumar_Resume.pdf';
-    link.download = 'Hitesh_Kumar_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   const handleContactMe = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -41,19 +31,22 @@ export const HeroSection = () => {
             <span className="text-lg">Bangalore, India</span>
           </div>
           <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-white/90">
-            Crafting exceptional digital experiences with React.js and modern web technologies. 
-            7 years of building scalable applications that users love.
+            I'm Hitesh Kumar, also known as Hiku, a Software Engineer crafting exceptional
+            digital experiences with React.js and modern web technologies. 7 years of
+            building scalable applications that users love.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
-              onClick={handleDownloadResume}
+              asChild
               variant="secondary"
               size="lg"
               className="w-full sm:w-auto bg-white text-primary hover:bg-white/90 font-semibold px-8 py-4 text-lg"
             >
-              <Download className="w-5 h-5 mr-2" />
-              Download Resume
+              <a href="/Hitesh_Kumar_Resume.pdf" download="Hitesh_Kumar_Resume.pdf">
+                <Download className="w-5 h-5 mr-2" />
+                Download Resume
+              </a>
             </Button>
             <Button
               onClick={handleContactMe}

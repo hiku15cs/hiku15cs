@@ -85,18 +85,13 @@ export const Footer = () => {
               </Button>
             </div>
             <Button
+              asChild
               variant="outline"
               className="w-full border-secondary-foreground/20 text-secondary-foreground bg-transparent hover:bg-secondary-foreground hover:text-secondary"
-              onClick={() => {
-                const link = document.createElement("a");
-                link.href = "/Hitesh_Kumar_Resume.pdf";
-                link.download = "Hitesh_Kumar_Resume.pdf";
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }}
             >
-              Download Resume
+              <a href="/Hitesh_Kumar_Resume.pdf" download="Hitesh_Kumar_Resume.pdf">
+                Download Resume
+              </a>
             </Button>
           </div>
         </div>

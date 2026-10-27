@@ -80,19 +80,14 @@ export const Navigation = () => {
               </a>
             ))}
             <Button
+              asChild
               variant="default"
               size="sm"
-              onClick={() => {
-                const link = document.createElement("a");
-                link.href = "/Hitesh_Kumar_Resume.pdf";
-                link.download = "Hitesh_Kumar_Resume.pdf";
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }}
             >
-              <Download className="w-4 h-4 mr-2" />
-              Resume
+              <a href="/Hitesh_Kumar_Resume.pdf" download="Hitesh_Kumar_Resume.pdf">
+                <Download className="w-4 h-4 mr-2" />
+                Resume
+              </a>
             </Button>
           </div>
 
@@ -129,20 +124,15 @@ export const Navigation = () => {
                 </a>
               ))}
               <Button
+                asChild
                 variant="default"
                 size="sm"
                 className="w-full mt-4"
-                onClick={() => {
-                  const link = document.createElement("a");
-                  link.href = "/Hitesh_Kumar_Resume.pdf";
-                  link.download = "Hitesh_Kumar_Resume.pdf";
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }}
               >
-                <Download className="w-4 h-4 mr-2" />
-                Download Resume
+                <a href="/Hitesh_Kumar_Resume.pdf" download="Hitesh_Kumar_Resume.pdf">
+                  <Download className="w-4 h-4 mr-2" />
+                  Download Resume
+                </a>
               </Button>
             </div>
           </div>
